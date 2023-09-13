@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - LimeJungle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main">
+        <div id="title">
+            <div id="header">
+                <h1>LimeJungle</h1>
+                <h6>put your slogan here</h6>
+            </div>
+        </div>
+        <div id="hero">
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="index.html#content">BLOG</a></li>
+                    <li><a href="index.html#contacts">CONTACT US</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                </ul>
+                <div class="search-container">
+                    <form id="search-form" action="/search" method="GET">
+                        <input type="text" id="search-input" name="q" placeholder="Search...">
+                        <button type="submit" id="search-button">Search</button>
+                    </form>
+                </div>
+            </nav>
+            <div class="seconddiv">
+                <div class="registration-form">
+                    <h2>Register</h2>
+                    <table>
+                        <tr>
+                            <td><label for="first-name">First Name:</label></td>
+                            <td><input type="text" id="first-name" name="first-name" required placeholder="Enter your First Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="last-name">Last Name:</label></td>
+                            <td><input type="text" id="last-name" name="last-name" required placeholder="Enter your Last Name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" name="email" required placeholder="Enter your Email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone-number">Phone Number:</label></td>
+                            <td><input type="number" id="phone-number" name="phone-number" required placeholder="Enter your Number"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="password">Password:</label></td>
+                            <td><input type="password" id="password" name="password" required placeholder="Enter your Password"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="confirm-password">Confirm Password:</label></td>
+                            <td><input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your Password"></td>
+                        </tr>
+                    </table>
+                    <button type="submit">Register</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h6>Copyright ©️ 2023 LimeJungle - All Rights Reserved</h6>
+            <h6>FREE CSS Templates by FREE Website Template</h6>
+        </div>
+    </div>
+</body>
+</html>
