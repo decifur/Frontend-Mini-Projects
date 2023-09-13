@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - LimeJungle</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="title">
+        <div id="header">
+          <h1>LimeJungle</h1>
+          <h6>put your slogan here</h6>
+        </div>
+      </div>
+      <div id="hero">
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="index.html#content">BLOG</a></li>
+            <li><a href="index.html#contacts">CONTACT US</a></li>
+            <li><a href="register.html">REGISTER</a></li>
+          </ul>
+          <div class="search-container">
+            <form id="search-form" action="/search" method="GET">
+              <input
+                type="text"
+                id="search-input"
+                name="q"
+                placeholder="Search..."
+              />
+              <button type="submit" id="search-button">Search</button>
+            </form>
+          </div>
+        </nav>
+        <div class="seconddiv">
+            <div class="registration-form">
+                <h2>Login</h2>
+                <table>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required placeholder="Enter your Email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" required placeholder="Enter your Password"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" id="keep-signed-in" name="keep-signed-in"></td>
+                        <td><label for="keep-signed-in">Keep me signed in</label></td>
+                    </tr>
+                </table>
+                <button type="submit">Login</button>
+            </div>
+        </div>
+      </div>
+      <div class="footer">
+        <h6>Copyright ©️ 2023 LimeJungle - All Rights Reserved</h6>
+        <h6>FREE CSS Templates by FREE Website Template</h6>
+      </div>
+    </div>
+  </body>
+</html>
