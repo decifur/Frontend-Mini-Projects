@@ -31,7 +31,7 @@
     align-items: center;
     background-color: rgb(237, 237, 237);
     color: white;
-    padding: 10px;
+    padding: 20px;
     width: 80vw;
     border-radius: 20px 20px 0 0;
 }
@@ -61,7 +61,7 @@
     margin-right: 5px; 
 }
 
-#search-button {
+#search-button,button {
     padding: 6px 10px;
     background-color: rgb(108, 178, 2);
     color: white;
@@ -78,8 +78,10 @@
 
 .seconddiv{
     width: 80vw;
-    /* height: 60vw; */
+    min-height: 348px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     background: white;
     border-radius: 0 0 20px 20px;
     overflow: hidden;
@@ -177,4 +179,27 @@ ul {
 
 .about-us{
     padding: 20px;
+}
+
+/* REGISTER */
+
+.registration-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+td{
+    padding: 10px;
+    text-align: center;
+}
+input{
+    outline: none;
 }
