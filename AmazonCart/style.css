@@ -209,7 +209,8 @@ body{
 
 #hero{
     width: 100%;
-    height: 30vw;
+    min-width: 1400px;
+    height: 400px;
     background-color: #EAEDED;
     display: flex;
     justify-content: center;
@@ -220,10 +221,162 @@ body{
     width: 65%;
     height: 90%;
     background-color: #fff;
+    padding: 20px;
 }
+
+#heading{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+#heading>p{
+    font-size: 16px;
+    font-weight: 500;
+}
+#content{
+    height: 75%;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+}
+#content__left{
+    height: 100%;
+    width: 25%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#content__left>img{
+   height: 95%;
+}
+#content__mid{
+    height: 100%;
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#content__mid>h3{
+    line-height: 28px;
+}
+#content__right{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+p{
+    font-size: 13px;
+}
+.red{
+    color: red;
+    font-size: 13px;
+}
+.bold{
+    font-weight: 700;
+}
+#row>button{
+    border: none;
+    background-color: transparent;
+    border-left: 1px solid black;
+    padding: 0 5px;
+    margin: 0 0 0 10px;
+}
+#Qty{
+    background-color: #EAEDED;
+    border-radius: 5px;
+    outline: none;
+}
+
+#hero-footer{
+    width: 100%;
+    height: auto;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+.price-span{
+    font-weight: 700;
+}
+
 #hero__right{
     width: 30%;
     height: 90%;
     background-color: #fff;
+    padding: 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+#hero__right>h5{
+    font-weight: 400;
+}
+#container{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    gap: 10px;
+}
+#hero__right>.orange{
+    background-color: #F3A847;
+}
+#hero__right>button{
+    background-color: #EAEDED;
+    border: none;
+    outline: none;
+    height: 15%;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
+#footer{
+    min-width: 1400px;
+    width: 100%;
+    height: 300px;
+}
+#footer__top{
+    width: 100%;
+    height: 50px;
+    background-color: #485769;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#footer__top>p{
+    font-size: 15px;
+}
+#footer__mid{
+    width: 100%;
+    height: 200px;
+    background-color: #232F3E;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+.col{
+    width: 20%;
+    height: 80%;
+    line-height: 25px;
+}
+
+#footer__bottom{
+    width: 100%;
+    height: 50px;
+    background-color: #131A22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
