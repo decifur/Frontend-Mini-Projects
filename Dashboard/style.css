@@ -116,13 +116,9 @@ body{
 #hero__mid{
     height: 100%;
     width: 55%;
-    background-color: salmon;
+    /* background-color: salmon; */
 }
-#hero__right{
-    height: 100%;
-    width: 25%;
-    background-color: pink;
-}
+
 
 #top__left{
     height: 15%;
@@ -162,4 +158,95 @@ hr{
     color: #878787;
     font-weight: 500;
     font-size: 13px;
+}
+
+#hero__right{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#top_right,#bottom_right{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 10px;
+}
+#top_right>h2, #bottom_right>h2{
+    font-weight: 700;
+}
+.a_card{
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+}
+.a_row{
+    height: 30%;
+    width: 100%;
+}
+.a_row p{
+    font-size: 14px;
+    font-weight: 450;
+    color: #878787;
+}
+.a_row p span{
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+
+.b_card{
+    height: 80%;
+    width: 80%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.b_row{
+    height: 31%;
+    width: 100%;
+    display: flex;
+    border-radius: 20px;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.profile_details{
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+    padding: 7px 0;
+    justify-content: flex-start;
+}
+.profile_img{
+    height: 100%;
+    aspect-ratio: 1/1;
+
+}
+.profile_img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.profile_details h5{
+    font-size: 13px;
+}
+.profile_details p{
+    font-size: 12px;
+    font-weight: 500;
+    color: #878787;
 }
