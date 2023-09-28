@@ -113,12 +113,6 @@ body{
     flex-direction: column;
     gap: 20px;
 }
-#hero__mid{
-    height: 100%;
-    width: 55%;
-    /* background-color: salmon; */
-}
-
 
 #top__left{
     height: 15%;
@@ -188,6 +182,7 @@ hr{
     flex-direction: column;
     gap: 10px;
     background-color: white;
+    box-shadow: 5px 5px 20px #d2d2d2;
 }
 .a_row{
     height: 30%;
@@ -219,6 +214,7 @@ hr{
     border-radius: 20px;
     gap: 10px;
     background-color: white;
+    box-shadow: 5px 5px 20px #d2d2d2;
     padding: 10px;
     justify-content: center;
     align-items: center;
@@ -249,4 +245,134 @@ hr{
     font-size: 12px;
     font-weight: 500;
     color: #878787;
+}
+
+#hero__mid{
+    height: 100%;
+    width: 55%;
+}
+#mid_row1{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+#mid_row1>h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+#mid_row2{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.progress_card{
+    height: 100%;
+    width: 18%;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 5px 5px 20px #d2d2d2;
+}
+.pc_row1,.pc_row3{
+    width: 100%;
+    height: 15%;
+}
+.pc_row2,.pc_row5{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+}
+.pc_row4{
+    width: 100%;
+    height: 50%;
+}
+
+
+.pc_circle{
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: royalblue;
+}
+.cyan{
+    background-color: mediumspringgreen;
+}
+.salmon{
+    background-color: salmon;
+}
+.pc_row2>h3{
+    font-size: 11px;
+}
+.pc_row3{
+    padding: 5px 0;
+    font-size: 14px;
+}
+.pc_row4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-progress-value {
+    stroke-width: 8px;
+    stroke: royalblue;
+    fill: transparent;
+    stroke-linecap: round;
+}
+
+.circle-progress-text {
+    fill: #888;
+    font-size: 16px;
+    font-weight: 600;
+}
+.pc_row5{
+    font-size: 10px;
+    font-weight: 500;
+    color: #878787;
+}
+
+#mid_row3{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+#mid_row3>h2{
+    font-weight: 700;
+}
+#mid_row4{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+#mid_row4 table{
+    width: 96%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 5px 5px 20px #d2d2d2;
+}
+#mid_row4 tr,td{
+    text-align: center;
+    border-bottom: 2px solid #d2d2d2;   
+}
+.border-row{
+    border: none;
 }
