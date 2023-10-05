@@ -4,17 +4,45 @@
   box-sizing: border-box;
   font-family: "montserrat";
 }
+body{
+  position: relative;
+}
 
 #main {
   height: auto;
   width: 100%;
-  background-image: linear-gradient(
-      to top,
-      rgba(255, 255, 255, 0),
-      rgba(0, 0, 0, 0.95)
-    ),
-    url("/img/bg.jpg");
-  background-size: cover;
+  position: relative;
+}
+.fixed-image{
+  z-index: -3;
+  position:fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  
+}
+.fixed-image img{
+  width: 100%;
+  height: 100vh;
+}
+
+.fixed-card{
+  width: 250px;
+  height: 50px;
+  background-color: #ffa500;
+  color: #8b0000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  transform: rotate(270deg) translateY(-50%);
+  right: -125px;
+  z-index: 10;
+  top: 50%;
+  position: fixed;
 }
 
 #topbar {
@@ -249,6 +277,7 @@ a {
 #about__right {
   width: 50%;
   height: 100%;
+  background-color: #fff;
   display: flex;
 }
 #r1 {
@@ -267,7 +296,7 @@ a {
       rgba(0, 0, 0, 0.701),
       rgba(255, 255, 255, 0)
     ),url("/img/yt1.jpeg");
-  z-index: -1;
+    background-size: cover;
 }
 #r1 > iframe {
   z-index: 2;
@@ -280,7 +309,8 @@ a {
   display: flex;
   flex-direction: column;
   padding: 5vw;
-  background-color: transparent;
+  background-image: linear-gradient( to bottom, rgba(0, 0, 0, 0.5),
+  rgba(255, 255, 255, 0));
 }
 #portal-head {
   height: 10%;
@@ -327,6 +357,13 @@ a {
   align-items: center;
   background-color: #fff;
   border-radius: 10%;
+  position: relative;
+  padding: 10px;
+}
+.inner-card p{
+  margin-top: 30px;
+  font-weight: 500;
+  line-height: 25px;
 }
 .inner-card button{
   height: 15%;
@@ -337,6 +374,22 @@ a {
   font-weight: 700;
   color: #8b0000;
   background-color: #FFA500;
+}
+
+.card-circle{
+  background-color: #8b0000;
+  color: white;
+  width: 70px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #services-div{
@@ -394,6 +447,67 @@ a {
   justify-content: center;
 }
 
+#admin-div{
+  height: 35vw;
+  width: 100%;
+  background-color: #CCCCCC;
+  padding: 3vw;
+}
+#admin-top {
+  height: 10%;
+  width: 100%;
+}
+#admin-top p {
+  color: gray;
+  font-weight: 600;
+}
+#admin-top h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+#admin-top h1 > span {
+  color: #8b0000;
+}
+#admin-bottom{
+  height: 90%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center ;
+}
+.admin-cards{
+  height: 70%;
+  width: 20%;
+  background-color: white;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 20px 10px;
+  box-shadow: 0 0 10px rgba(113, 113, 113, 0.785); 
+}
+.admin-cards img{
+  width: 50%;
+  border-radius: 50%;
+  border: 5px double #8b0000;
+  height: auto;
+  margin-bottom: 30px;
+}
+.admin-cards h3{
+  color: #8b0000;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 #footer {
@@ -411,7 +525,7 @@ a {
 }
 #footer__bottom {
   width: 100%;
-  height: 10%;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
